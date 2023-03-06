@@ -11,3 +11,22 @@ pypi.org  = Python Package Index (PyPI) is a repository of software for the Pyth
 pip = command used in python to install a package directly from PyPI
 pip install matplotlib = line to install matplotlib from your terminal (install it directly in the folder you are going to work with it)
 pip freeze = command to check the packages/libraries installed in your computer
+
+which python = shows where is located python (where is running)
+which pip =  show where is located pip
+python -m venv env = creates a new virtual environment in terminal (it creates a new directory with name env)
+-c command
+          Specify the command to execute (see next section).  This terminates the option  list  (following  options  are
+          passed as arguments to the command).
+-m module-name
+          Searches sys.path for the named module and runs the corresponding .py file as a script.
+
+source env/bin/activate = Activates the new virtual environment created
+deactivate = close the virtual environment
+
+pip install --upgrade pi = Upgrades the curren version of pip the latest
+
+">" = take the output as the input of other
+pip freeze > requirements.txt = sends the result (output) of freeze to a .txt file
+cat requirements.txt = shows the information within the file (actually cat is used to concatenate)
+pip install -r requirements.txt  = install the packges and libreries within requirements.txt file

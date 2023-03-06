@@ -1,0 +1,13 @@
+github
+    readme.md file - To show instructions like code, you must type ```sh (or whatever extension you need like py, js, etc.)
+    ```sh
+    something to say
+    ```
+
+
+pypi.org  = Python Package Index (PyPI) is a repository of software for the Python programming language.
+        You can find and install software developed and shared by Python community
+        Just find the package you need and get the line to insert in the terminal
+pip = command used in python to install a package directly from PyPI
+pip install matplotlib = line to install matplotlib from your terminal (install it directly in the folder you are going to work with it)
+pip freeze = command to check the packages/libraries installed in your computer

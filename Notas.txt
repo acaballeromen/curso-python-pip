@@ -3,7 +3,7 @@ github
     ```sh
     something to say
     ```
-
+.gitignore => visit toptal gitignore.io to get your script of gitignore
 
 pypi.org  = Python Package Index (PyPI) is a repository of software for the Python programming language.
         You can find and install software developed and shared by Python community

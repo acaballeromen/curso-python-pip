@@ -1,0 +1,9 @@
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app  #con este codigo nos aseguramos que se este actualizando en vivo cada cambio que se realice 
+    ports:
+      - "8080:80"   # seria nuestro puerto 80 enlazado al puerto 80 del contenedor (se tubo que cambiar al puerto 8080 local, ya que mandaba error "port is already allocated")

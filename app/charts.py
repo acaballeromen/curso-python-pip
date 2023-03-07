@@ -10,7 +10,7 @@ def generate_pie_chart(labels, values):
   fig, ax = plt.subplots()
   ax.pie(values, labels = labels)
   ax.axis("equal")
-  plt.savefig("pie.png")    # estamos dando la instruccion de que en vez de que muestre la grafica (plt.show) lo guarde como una imagen
+  plt.savefig("chart_pie_final_este_si.png")    # estamos dando la instruccion de que en vez de que muestre la grafica (plt.show) lo guarde como una imagen
   plt.close()
   
 if __name__ == "__main__":

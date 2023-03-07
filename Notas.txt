@@ -30,3 +30,47 @@ pip install --upgrade pi = Upgrades the curren version of pip the latest
 pip freeze > requirements.txt = sends the result (output) of freeze to a .txt file
 cat requirements.txt = shows the information within the file (actually cat is used to concatenate)
 pip install -r requirements.txt  = install the packges and libreries within requirements.txt file
+
+git push origin head = uses the current branch in order to avoid using the actual name of the branch (instead using main for instance)
+
+web-server project
+source env/bin/activate
+Requests: HTTP for Humans™ = Requests is an elegant and simple HTTP library for Python, built for human beings.
+pip install requests = installs the requests package
+pip freeze
+pip freeze > requirements.txt
+cat requirements.txt
+
+app project
+source env/bin/activate
+pip install pandas = installs pandas package
+pip freeze
+pip freeze > requirements.txt = to include pandas to the requirements.txt file
+cat requirements.txt
+
+web-server project
+source env/bin/activate
+pip install fastapi 
+pip install "uvicorn[standard]"
+pip freeze 
+pip freeze > requirements.txt
+uvicorn main:app --reload = used to create a server with uvicorn in python
+
+
+Docker
+FROM python:3.8 = indicates the python version to work with
+
+WORKDIR /app = indicates the working directory in your machine
+COPY requirements.txt /app/requirements.txt = good practice to copy the requirements (left is local and right is sending to the container)
+RUN pip install --no-cache-dir  --upgrade -r /app/requirements.txt = installs the dependences. Doesn't apply cache. Apply updates if finded
+COPY . /app/ = copies all the information within app folder "." in local to the container
+CMD bash -c "while true; do sleep 1; done" = bash code to keep the container runing
+
+docker-compose build = in terminal to build the container
+docker-compose up -d = launch the container
+docker-compose ps = check container's status
+docker-compose exec app-csv bash = enters the project in the container to start working inside
+docker-compose down = removes the container
+
+web-server project
+CMD ["uvicorn", "main:app", "--host","0.0.0.0", "--port", "80"] = runs the uvicorn server

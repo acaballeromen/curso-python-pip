@@ -1,0 +1,8 @@
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - .:/app #con este codigo nos aseguramos que se este actualizando en vivo cada cambio que se realice 
+     
